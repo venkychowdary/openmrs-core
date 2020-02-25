@@ -8,7 +8,7 @@ node ('Docker') {
 
     stage ('package') {
 
-        sh 'mvn clean package'
+        sh 'mvn package'
 
     }
 
