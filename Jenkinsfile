@@ -1,4 +1,4 @@
-node ('docker') {
+node {
 
     stage ('scm') {
         git 'https://github.com/venkychowdary/openmrs-core.git'
