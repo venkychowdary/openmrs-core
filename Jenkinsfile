@@ -8,10 +8,6 @@ node ('docker') {
         sh 'mvn package'
     }
 
-    stage ('junit results') {
-        junit 'webapp/target/surefire-reports/*.xml'
-    }
-
     stage ('archiving artifact') {
         archiveArtifacts 'webapp/target/*.war'
     }
@@ -27,3 +23,5 @@ node ('docker') {
     }
 
 }
+
+
